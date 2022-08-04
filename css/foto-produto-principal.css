@@ -1,0 +1,31 @@
+.foto_produto_principal{
+    width: 530px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+    position: relative;
+}
+.foto_produto_principal img{
+    width: 100%;
+    height: 100%;
+}
+
+.foto_produto_principal .tag{
+    color: #fff;
+    background-color: #E93A7D;
+    width: 72px;
+    height: 29px;
+    border-radius: 8px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+   
+    font-size: 12px;
+    font-weight: 700;
+    
+}
+
+.foto_produto_principal .tag p{
+    margin-top: 10%;
+    margin-left: 15%;
+}

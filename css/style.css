@@ -9,3 +9,10 @@ main{
     max-width: 1440px;
     width: 100vw;
 }
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
