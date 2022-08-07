@@ -5,20 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tipbar.css">
-    <link rel="stylesheet" href="css/cabecalho.css">
-    <link rel="stylesheet" href="css/caminho.css">
-    <link rel="stylesheet" href="css/produtos.css">
-    <link rel="stylesheet" href="css/produtos-lateral.css">
-    <link rel="stylesheet" href="css/foto-produto-principal.css">
-    <link rel="stylesheet" href="css/detalhes-produtos.css">
+    <link rel="stylesheet" href="css/main/header/tipbar.css">
+    <link rel="stylesheet" href="css/main/header/cabecalho.css">
+    <link rel="stylesheet" href="css/main/header/caminho.css">
+
+    <link rel="stylesheet" href="css/main/produtos.css">
+    <link rel="stylesheet" href="css/main/produtos-lateral.css">
+    <link rel="stylesheet" href="css/main/foto-produto-principal.css">
+
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produtos.css">
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produtos-cores.css">
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produtos-tamanho.css">
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produtos-botoes.css">
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produto-descricao.css">
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produto-frete.css">
+    <link rel="stylesheet" href="css/main/detalhes-info/detalhes-produtos-compartilhar.css">
+
+    <link rel="stylesheet" href="css/main/vitrine-carosel.css">
+    <link rel="stylesheet" href="css/main/formulario.css">
+
+    <link rel="stylesheet" href="css/main/rodape/rodape.css">
+    <link rel="stylesheet" href="css/main/rodape/caixa-contato.css">
+    <link rel="stylesheet" href="css/main/rodape/links-rodape.css">
+    <link rel="stylesheet" href="css/main/rodape/bandeiras-rodape.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <title>Document</title>
+    <title>Agência N1</title>
 </head>
 
 <body>
@@ -32,8 +52,12 @@
         </div>
         <header>
             <div class="cabecalho">
+                <nav class="menu_mobile">
+                    <img src="assets/menu-amburger.svg" alt="">
+                </nav>
                 <img src="assets/logo.svg" alt="logo Agência N1">
-                <nav>
+                
+                <nav class="menu_desktop">
                     <ul>
                         <li><a href="#">Laçamentos</a></li>
                         <li><a href="#">Tênis</a></li>
@@ -43,114 +67,408 @@
                         <li><a href="#">Off</a></li>
                     </ul>
                 </nav>
+
                 <div class="sign-in">
 
                     <form class="search">
-                        <input id="search" type="search" placeholder="O que está procurando?">
+                        <input id="search" class="desativa" type="search" placeholder="O que está procurando?">
                         <button>
                             <img src="assets/lupa.svg" alt="icone lupa">
-                        </button>  
+                        </button>
                     </form>
-                    
-                    <a href="">
+
+                    <a href="#">
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="hover" d="M18.3334 19.25V17.4167C18.3334 16.4442 17.947 15.5116 17.2594 14.8239C16.5718 14.1363 15.6391 13.75 14.6667 13.75H7.33335C6.36089 13.75 5.42826 14.1363 4.74063 14.8239C4.053 15.5116 3.66669 16.4442 3.66669 17.4167V19.25" stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path class="hover" d="M11 10.0833C13.025 10.0833 14.6666 8.44171 14.6666 6.41667C14.6666 4.39162 13.025 2.75 11 2.75C8.97494 2.75 7.33331 4.39162 7.33331 6.41667C7.33331 8.44171 8.97494 10.0833 11 10.0833Z" stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path class="hover"
+                                d="M18.3334 19.25V17.4167C18.3334 16.4442 17.947 15.5116 17.2594 14.8239C16.5718 14.1363 15.6391 13.75 14.6667 13.75H7.33335C6.36089 13.75 5.42826 14.1363 4.74063 14.8239C4.053 15.5116 3.66669 16.4442 3.66669 17.4167V19.25"
+                                stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="hover"
+                                d="M11 10.0833C13.025 10.0833 14.6666 8.44171 14.6666 6.41667C14.6666 4.39162 13.025 2.75 11 2.75C8.97494 2.75 7.33331 4.39162 7.33331 6.41667C7.33331 8.44171 8.97494 10.0833 11 10.0833Z"
+                                stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 20.1667C10.5523 20.1667 11 19.7563 11 19.25C11 18.7437 10.5523 18.3333 10 18.3333C9.44772 18.3333 9 18.7437 9 19.25C9 19.7563 9.44772 20.1667 10 20.1667Z" stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M19 20.1667C19.5523 20.1667 20 19.7563 20 19.25C20 18.7437 19.5523 18.3333 19 18.3333C18.4477 18.3333 18 18.7437 18 19.25C18 19.7563 18.4477 20.1667 19 20.1667Z" stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2 2.75H5.63636L8.07273 13.3874C8.15586 13.7531 8.38355 14.0816 8.71595 14.3155C9.04835 14.5493 9.46427 14.6735 9.89091 14.6664H18.7273C19.1539 14.6735 19.5698 14.5493 19.9022 14.3155C20.2346 14.0816 20.4623 13.7531 20.5455 13.3874L22 6.72213H6.54545" stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>                        
+                            <path
+                                d="M10 20.1667C10.5523 20.1667 11 19.7563 11 19.25C11 18.7437 10.5523 18.3333 10 18.3333C9.44772 18.3333 9 18.7437 9 19.25C9 19.7563 9.44772 20.1667 10 20.1667Z"
+                                stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M19 20.1667C19.5523 20.1667 20 19.7563 20 19.25C20 18.7437 19.5523 18.3333 19 18.3333C18.4477 18.3333 18 18.7437 18 19.25C18 19.7563 18.4477 20.1667 19 20.1667Z"
+                                stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M2 2.75H5.63636L8.07273 13.3874C8.15586 13.7531 8.38355 14.0816 8.71595 14.3155C9.04835 14.5493 9.46427 14.6735 9.89091 14.6664H18.7273C19.1539 14.6735 19.5698 14.5493 19.9022 14.3155C20.2346 14.0816 20.4623 13.7531 20.5455 13.3874L22 6.72213H6.54545"
+                                stroke="#1E0E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
                     <span class="itens_carrinho">0</span>
                 </div>
-                
-            </div>          
+
+            </div>
         </header>
 
         <section class="caminho">
             <div>
                 <ul>
-                    <a href="#"><li>Home </li></a>
+                    <a href="#">
+                        <li>Home </li>
+                    </a>
                     <span>></span>
-                    <a href="#"><li>Tênis </li></a>
+                    <a href="#">
+                        <li>Tênis </li>
+                    </a>
                     <span>></span>
-                    <a href="#"><li>Tênis Nike Air Max 97 SE</li></a>
-                    
+                    <a href="#">
+                        <li>Tênis Nike Air Max 97 SE</li>
+                    </a>
+
                 </ul>
-            </div>  
+            </div>
         </section>
 
         <section class="produtos">
             <div class="container">
 
                 <div class="produtos_lateral">
-                    <div><img src="assets/vista-principal2.png" alt=""></div>
-                    <div><img src="assets/vista-solado.png" alt=""></div>
-                    <div><img src="assets/vista-superior.png" alt=""></div>
-                    <div><img src="assets/vista-usual.png" alt=""></div>       
+                    <div onclick='trocaImagem1()' ><img src="assets/vista-principal2.png" alt="" ></div>
+                    <div onclick="trocaImagem2()"><img src="assets/vista-solado.png" alt="" ></div>
+                    <div onclick="trocaImagem3()"><img src="assets/vista-superior.png" alt="" ></div>
+                    <div onclick="trocaImagem4()"><img src="assets/vista-usual.png" alt="" ></div>
                 </div>
 
                 <div class="foto_produto_principal">
-                    <div class="tag"><p>20% off</p></div>
-                   
-                    <img src="assets/vista-principal2.png" alt="">
+                    <div class="tag">
+                        <p>20% off</p>
+                    </div>
+
+                    <img id="img_destaque" src="assets/vista-principal2.png" alt="" >
                 </div>
 
                 <div class="detalhes_produtos">
 
                     <div class="titulos">
                         <h4>Tênis Nike Air Max 97 SE</h4>
-                        <p class="codigo texto_peq">Código: 76545</p>
-                        <p class="valor"> <s class="texto_peq">R$ 373,00</s> R$261,90</p>
+                        <p class=" texto_peq">Código: 76545</p>
+                        <p class=" valor"> <s class="texto_peq">R$ 373,00</s> R$261,90</p>
                         <p class="parcelas">ou 10x de R$ 26,19</p>
                     </div>
 
                     <div class="cores">
-                        <p class="texto_peq">Cores</p>
+                        <p class="texto_peq marg">Cores</p>
                         <div class="input_cores">
-                            <input type="radio" name="cor" value="verde">
-                            <input type="radio" name="cor" value="azul">
-                            <input type="radio" name="cor" value="vermelho">
-                        </div>
+                            <input type="checkbox" id="item-1">
+                            <div class="checkbox-ativo">
+                                <label for="item-1">
+                                    <li class="cor-1"></li>
+                                </label>
+                            </div>
+                            <input type="checkbox" id="item-2">
+                            <div class="checkbox-ativo">
+                                <label for="item-2">
+                                    <li class="cor-2"></li>
+                                </label>
+
+                            </div>
+                            <input type="checkbox" id="item-3">
+                            <div class="checkbox-ativo">
+                                <label for="item-3">
+                                    <li class="cor-3"></li>
+                                </label>
+                            </div>
+                        </div> 
                     </div>
 
                     <div class="tamanho">
-                        <p class="texto_peq">Tamanho</p>                    
-                        <ul class="numeros">
-                            <li>39</li>
-                            <li>40</li>
-                            <li>41</li>
-                            <li>42</li>
-                        </ul>           
+                        <p class="texto_peq marg">Tamanho</p>
+
+                        <div class="tamanho_check">
+                            <input type="checkbox" id="tam-1">
+                            <div class="checkbox-tamanho">
+                                <label for="tam-1"><li class="cor-0">39</li></label>
+                            </div>
+                            <input type="checkbox" id="tam-2">
+                            <div class="desativado">
+                                <label for=""><li class=""><img src="assets/size40.svg" alt=""></li></label>
+                            </div>
+                            <input type="checkbox" id="tam-3">
+                            <div class="checkbox-tamanho">
+                                <label for="tam-3"><li class="cor-0">41</li></label>
+                            </div>
+                            <input type="checkbox" id="tam-4">
+                            <div class="checkbox-tamanho">
+                                <label for="tam-4"><li class="cor-0">42</li></label>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="botoes">
                         <div>
-                            <button>-</button>
-                            <p>01</p>
-                            <button>+</button>
+                            <button class="btn subt"><img src="assets/menos.svg" alt=""></button>
+                            <p class="quanti">0</p>
+                            <buttons class="btn soma"><img src="assets/mais.svg" alt=""></buttons>
                         </div>
-                        <button>
+                        <button class="btn_comprar">
                             <img src="assets/carrinho.svg" alt=""> Comprar agora
                         </button>
                     </div>
-                    <ul class="dp_mais">Detalhes do produto <img src="assets/mais.svg" alt="">
-                        <li>Lorem inpsum</li>
-                        <li>Lorem inpsum</li>
-                    </ul>
-                    <ul class="frete">Calcular frete e entrega <img src="assets/mais.svg" alt="">
-                        <li>Lorem inpsum</li>
-                        <li>Lorem inpsum</li>
-                    </ul>
-                </div>
 
+                    <div class="conteudo_descricao">
+                        <input type="checkbox" id="descri">
+                        <div class="checkbox-descricao">
+                            <label for="descri">
+                                <ul class="">Detalhes do produto <img src="assets/mais.svg" alt="">   
+                                </ul>
+                                <li class="item_descri">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, facere tempora itaque.
+                                </li>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="frete">
+                        <input type="checkbox" id="frete">
+                        <div class="checkbox_frete">
+                            <label for="frete">
+                                <ul class="">Calcular frete e entrega <img src="assets/mais.svg" alt="">
+                                </ul>
+                                <form action="#" class="calcula_frete">
+                                    <input class="input_frete" type="text" placeholder="Cep:99999-999" pattern="[0-9]{5}-[0-9]{3}">
+                                    <button class="btn_frete">Calcular Frete</button>
+                                </form>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="compartilhar">
+                        <p>Compartilhar</p>
+                        <a href="#"><img src="assets/logo-face.svg" alt=""></a>
+                        <a href="#"><img src="assets/logo-insta.svg" alt=""></a>
+                        <a href="#"><img src="assets/logo-email.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <section class="vitrine_carosel">   
+            <div class="box_titulo">
+                <h4>Você vai curtir também</h4>
             </div>
         </section>
 
+        <section class="carosel_section"> 
+            <div class="container_carousel">
+                
+                <div class="owl-carousel owl-theme posicao">
+                    
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-nike-air-max-2090.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-nike-air-force.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-nike-air-97-SE.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-air-max-2021.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-nike-air-max-2090.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-nike-air-force.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-nike-air-97-SE.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item produto_vitrine">
+                        <div class="container_produto_vitrine">
+                            <div class="container_produto_vitrine_foto">
+                                <p>20% off</p>
+                                <img src="assets/tenis-air-max-2021.png" alt="">
+                            </div>
+                            <div class="container_produto_vitrine_descricao">
+                                <h5>Tênis Nike</h5>
+                                <p class="preco"><s>R$190,00</s> R$ 150,00</p>
+                                <p class="parcela">ou 3x de R$ 50,00</p>
+                                <button class="btn_vitrine">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="formulario">
+            <div>
+                <p>Cadastre-se e seja um dos primeiros a saber de todas as novidades e ofertas.</p>
+                <form action="">
+                    <input type="text" placeholder="Nome" pattern="[A-Za-z]" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <button>Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="rodape">
+            <div class="links_rodape">
+
+                <div class="caixa_contato">
+                    <div class="espaço">
+                        <h2>
+                            <img src="assets/logo.svg" alt="logo da agência N1">
+                        </h2>
+                        <div>
+                            <a href="#"><img src="assets/logo-rodape/button-face.svg" alt=""></a>
+                            <a href="#"><img src="assets/logo-rodape/button-twe.svg" alt=""></a>
+                            <a href="#"><img src="assets/logo-rodape/button-insta.svg" alt=""></a>
+                            <a href="#"><img src="assets/logo-rodape/button-youtube.svg" alt=""></a>
+                            <a href="#"><img src="assets/logo-rodape/button-tictoc.svg" alt=""></a>
+                        </div>
+                        <a class="cont" href=""><img src="assets/logo-rodape/Icon-tel.svg" alt="">11 99999-9999</a>
+                        <a class="cont" href=""><img src="assets/logo-rodape/Icon-email.svg" alt="">contato@agencian1.com.br</a>
+                        <p>Seg. à Sex. das 09:00h às 18:00h</p>
+                        <p>Sábado das 10:00h às 14:00h</p>
+                    </div> 
+                </div>
+
+                <div class="container_links">
+
+                    <div class="links_insti">
+                        <ul>
+                            <h6>Institucional</h6>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Nossas Lojas</a></li>
+                            <li><a href="#">Fale Conosco</a></li>
+                        </ul>
+                        <ul>
+                            <h6>Minha Conta</h6>
+                            <li><a href="#">Meus Dados</a> </li>
+                            <li><a href="#">Meus Pedidos</a> </li>
+                            <li><a href="#">Login</a> </li>
+                        </ul>
+                        <ul>
+                            <h6>Suporte</h6>
+                            <li><a href="#">Politica de privacidade</a> </li>
+                            <li><a href="#">Perguntas Frequentes</a> </li>
+                            <li><a href="#">Troca ou devolução</a></li>
+                        </ul>
+                    </div>
+                    <div class="bandeiras">
+                        <ul class="paga">
+                            <h6>Pagamentos</h6>
+                            <li>
+                                <img src="assets/logo-rodape/bandeira-mastercard.svg" alt="">
+                                <img src="assets/logo-rodape/bandeira-visa.svg" alt="">
+                                <img src="assets/logo-rodape/bandeira-elo.svg" alt="">
+                                <img src="assets/logo-rodape/bamdeira-american-exp.svg" alt="">
+                                <img src="assets/logo-rodape/bandeira-pix.svg" alt="">
+                                <img src="assets/logo-rodape/codigo-de-barras.svg" alt="">
+                            </li>
+                        </ul>
+                        <ul class="segu">
+                            <h6>Segurança</h6>
+                            <li>
+                                <img src="assets/logo-rodape/selo.svg" alt="">
+                            </li>
+                        </ul>
+                        <ul class="logos">
+                            <li>
+                                <img src="assets/logo-rodape/bandeira-N1.svg" alt="">
+                                <img src="assets/logo-rodape/bandeira-vtex.svg" alt="">
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </footer>
+
+        <section class="texto_obrigatorio">
+            <p>Agência N1 - Todos os Direitos Reservados</p>
+        </section>
     </main>
 </body>
-
+<script src="script.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/owl.carousel.min.js"></script>
+<script src="lib/owl.init.js"></script>
 </html>
