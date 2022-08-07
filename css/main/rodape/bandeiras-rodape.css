@@ -1,0 +1,52 @@
+
+/*********************************/
+.container_links .bandeiras{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.container_links .bandeiras ul h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: #1E0E62;
+    margin-bottom: 15px;
+}
+.container_links .bandeiras .paga img{
+    width: 35px;
+    height: 30px;
+    margin-top: 4%;
+}
+.container_links .bandeiras .segu{
+    margin-right: 40px;
+}
+.container_links .bandeiras .segu img{
+    margin-top: 4%;
+}
+
+.container_links .bandeiras .logos img{
+    margin-top: 18%;
+    margin-right: 15px;
+}
+
+@media (max-width:768px){
+    .container_links .bandeiras{
+        flex-direction: column;
+        height: auto;
+        margin-top: 10px;
+    }
+    .container_links .bandeiras ul{
+        margin-top: 10px;
+    }
+    .container_links .bandeiras .paga img{
+        margin-top: 0;
+    }
+    .container_links .bandeiras .segu img{
+        margin-top: 0;
+    }
+    .container_links .bandeiras .logos img{
+        margin-top: 10px;
+    }
+}

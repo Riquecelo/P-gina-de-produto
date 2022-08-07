@@ -1,0 +1,47 @@
+.tipbar{
+    height: 28px;
+    width: 100vw;
+    background: #E93A7D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.tipbar ul{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 90px;
+}
+
+.tipbar ul li{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tipbar ul li img{
+    height: 18px;
+    width: 18px;
+}
+@media (max-width: 1020px){
+    .tipbar ul li:first-child{
+        display: none;
+    }
+}
+
+@media (max-width:768px){
+    .tipbar ul li{
+        display: none;
+    }
+    .tipbar ul li:first-child{
+        display: flex;
+    }
+}

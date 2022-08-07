@@ -1,0 +1,62 @@
+.detalhes_produtos .botoes{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.detalhes_produtos .botoes div{
+    display: flex;
+    align-items: center;
+}
+
+.botoes .btn{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: none;
+    background-color: #25DAC5;
+    cursor: pointer;
+}
+.botoes .btn img{
+    width: 100%;
+    height: 100%;
+}
+.botoes div .quanti{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 2px #D2D1D7;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #1E0E62;
+    font-weight: 700;
+    padding:10px 10px;
+}
+
+.botoes .btn_comprar{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: #25DAC5;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1E0E62;
+    font-weight: 500;
+}
+.botoes .btn_comprar img{
+    margin-right: 10px;
+}
+.botoes .btn_comprar:hover{
+    border: solid 2px #1E0E62;
+}
+
+@media (max-width:500px){
+    .botoes .btn_comprar{
+        width: 150px;
+    }
+}

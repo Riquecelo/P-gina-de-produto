@@ -1,0 +1,44 @@
+.conteudo_descricao{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    color: #1E0E62; 
+    height: 100%;
+    border-bottom: solid 1px #D2D1D7; 
+}
+
+#descri, .item_descri{
+    display: none;
+}
+
+input:checked + .checkbox-descricao .item_descri{
+   display: block;
+}
+
+.checkbox-descricao{
+    width: 100%;
+    height: auto;
+}
+
+.checkbox-descricao ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.checkbox-descricao .item_descri{
+    width: 100%;
+    font-size: 14px;
+}
+
+@media (max-width:768px){
+    .conteudo_descricao{
+        height: auto;
+    }
+    .checkbox-descricao{
+        padding-bottom: 20px;
+        height: auto;
+    }
+}

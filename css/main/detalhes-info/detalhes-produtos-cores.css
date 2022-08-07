@@ -1,0 +1,31 @@
+.detalhes_produtos .input_cores{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input:checked + .checkbox-ativo li{
+    display: block; 
+    border: solid 4px #2F1893;
+    background-image: url('../../../assets/check.svg');
+    background-repeat: no-repeat;
+    background-position: 30% -10% 
+}
+#item-1,#item-2,#item-3{
+   display: none;
+}
+label li{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cor-1{
+    background-color: #32B4BC
+}
+.cor-2{
+    background-color: #4267B2;
+}
+.cor-3{
+    background-color: #DC2532;
+}

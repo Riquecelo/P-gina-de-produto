@@ -1,0 +1,22 @@
+.compartilhar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+.compartilhar p{
+    font-size: 12px;
+    font-weight: 700;
+    color: #8F8F9F;
+}
+.compartilhar a img{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:768px){
+    .compartilhar{
+        height: 70px;
+    }
+}

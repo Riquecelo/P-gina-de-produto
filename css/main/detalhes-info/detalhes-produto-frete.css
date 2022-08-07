@@ -1,0 +1,76 @@
+.frete{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    color: #1E0E62; 
+    height: 100%;
+}
+
+#frete, .calcula_frete{
+    display: none;
+}
+
+input:checked + .checkbox_frete .calcula_frete{
+   display: flex;
+}
+
+.checkbox_frete{
+    width: 100%;
+    height: auto;  
+}
+
+.checkbox_frete ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+.calcula_frete{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.input_frete{
+    width: 150px;
+    height: 20px;
+    border-radius: 100px;
+    border: solid 2px #D2D1D7;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1E0E62;
+    font-weight: 500;
+    padding: 0 5px;
+}
+.input_frete:focus{
+    outline: none;
+}
+.btn_frete{
+    width: 200px;
+    height: 20px;
+    border-radius: 100px;
+    border: none;
+    background-color: #25DAC5;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1E0E62;
+    font-weight: 500;
+}
+
+@media (max-width:768px){
+    .frete{
+        height: auto;
+    }
+    .calcula_frete{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input_frete{
+        width: 100%;
+    }
+    .btn_frete{
+        width: 100%;
+    }
+}

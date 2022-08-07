@@ -1,0 +1,43 @@
+
+/**************************/
+.links_rodape .container_links{
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+/******************************/
+.container_links .links_insti{
+    width: 90%;
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_links .links_insti ul h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: #1E0E62;
+    margin-bottom: 15px;
+}
+
+.container_links .links_insti ul li{
+    font-weight: 400;
+    font-size: 12px;
+    color: #8F8F9F;
+    margin-bottom: 10px;
+}
+
+@media (max-width:768px){
+    .links_rodape .container_links{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:560px){
+    
+    .container_links .links_insti{
+        flex-direction: column;
+        height: auto;
+    }
+}
