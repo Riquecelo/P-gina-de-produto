@@ -1,0 +1,25 @@
+.menu_mobile_itens{
+    display: none;
+}
+.menu_mobile_itens ul{
+    background-color:  #E93A7D;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+    z-index: 2;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.menu_mobile_itens ul li a{
+    color: #fff;
+}
+
+.open{
+    display: block;
+}
