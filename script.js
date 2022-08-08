@@ -41,3 +41,16 @@ btnComprar.addEventListener('click', function(){
     carrinho = quanti
     itensNoCarrinho.innerHTML = carrinho
 })
+
+/**Evento menu */
+let ativo = true
+let ativaMenu = document.querySelector('.menu_mobile')
+
+ativaMenu.addEventListener('click', function(){
+    let menuMobile = document.querySelector('.menu_mobile_itens')
+
+    document.body.style.overflow= ativo ? "hidden" : "initial"
+
+    menuMobile.classList.toggle("open", ativo)
+    ativo = !ativo
+})
